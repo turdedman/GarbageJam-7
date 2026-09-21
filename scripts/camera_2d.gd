@@ -1,6 +1,7 @@
 extends Camera2D
 
 @export var speed = 200
+@export var zoomSpeed = 167
 
 var mainScene: Node
 
@@ -11,6 +12,13 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	
+	if Input.is_action_just_pressed("scroll in"):
+		zoom += Vector2(1, 1) * zoomSpeed * delta
+	elif Input.is_action_just_pressed("scroll out"):
+		if zoom > Vector2(1, 1):
+			zoom += Vector2(1, 1) * -zoomSpeed * delta
+	
 	var playerPosition: Vector2 = mainScene.get_node("Player").position
 	
 	var velocityVector2 = playerPosition - position
