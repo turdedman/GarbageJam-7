@@ -36,6 +36,7 @@ floor_stop_on_slope = false
 script = ExtResource("1_dqkch")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1936787847]
+unique_name_in_owner = true
 texture_filter = 1
 scale = Vector2(2.385, 2.385)
 sprite_frames = SubResource("SpriteFrames_updbl")
