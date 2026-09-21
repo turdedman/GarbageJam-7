@@ -16,3 +16,4 @@ func _on_body_entered(body):
 		game_manager.add_coin()
 		#removes the coin node
 		tween.tween_callback(self.queue_free)
+		queue_free()
