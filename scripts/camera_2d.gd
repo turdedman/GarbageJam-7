@@ -1,7 +1,7 @@
 extends Camera2D
 
 @export var speed = 200
-@export var zoomSpeed = 167
+@export var zoomSpeed = 10
 
 var mainScene: Node
 

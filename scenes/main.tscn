@@ -128,6 +128,10 @@ tile_map_data = PackedByteArray("AAACAAAAAAAEAAkAAFAEAAAAAAAEAAkAAFAGAAAAAAAEAAk
 tile_set = SubResource("TileSet_rctlh")
 
 [node name="Walls" type="TileMapLayer" parent="." unique_id=1596178812]
+texture_filter = 1
+position = Vector2(50, 50)
+scale = Vector2(5, 5)
+tile_map_data = PackedByteArray("AAD/////AAADAAEAADAAAP//AAAAAAAAAAABAP//AAABAAAAAAACAP//AAACAAAAAAADAP//AAAAAAAAAAAEAP//AAABAAAAAAAFAP//AAACAAAAAAAGAP//AAAAAAAAAAAHAP//AAABAAAAAAAIAP//AAACAAAAAAAJAP//AAAAAAAAAAAKAP//AAABAAAAAAALAP//AAACAAAAAAA=")
 tile_set = SubResource("TileSet_sugp2")
 
 [node name="Player" parent="." unique_id=1726456037 instance=ExtResource("2_0wfyh")]
