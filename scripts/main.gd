@@ -5,6 +5,7 @@ var hourglassMagnified: bool = false
 
 func startgame() -> void:
 	$HourGlass/CanvasLayer/Hourglass.get_node("AnimatedSprite2D").play("default")
+	$HourGlass/CanvasLayer/Hourglass.get_node("GameOverTimer").start()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

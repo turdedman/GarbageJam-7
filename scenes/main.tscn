@@ -151,6 +151,29 @@ limit_right = 1243
 limit_bottom = 718
 script = ExtResource("3_sugp2")
 
+[node name="Coins" type="Node" parent="." unique_id=272001000]
+
+[node name="PickupItem1" parent="Coins" unique_id=1161134929 instance=ExtResource("6_tefeu")]
+position = Vector2(367, 171)
+
+[node name="PickupItem2" parent="Coins" unique_id=107373138 instance=ExtResource("6_tefeu")]
+position = Vector2(491, 188)
+
+[node name="PickupItem3" parent="Coins" unique_id=993434186 instance=ExtResource("6_tefeu")]
+position = Vector2(406, 101)
+
+[node name="PickupItem4" parent="Coins" unique_id=1821156253 instance=ExtResource("6_tefeu")]
+position = Vector2(266, 155)
+
+[node name="PickupItem5" parent="Coins" unique_id=144992352 instance=ExtResource("6_tefeu")]
+position = Vector2(285, 74)
+
+[node name="PickupItem6" parent="Coins" unique_id=1371110923 instance=ExtResource("6_tefeu")]
+position = Vector2(607, 190)
+
+[node name="PickupItem7" parent="Coins" unique_id=649723980 instance=ExtResource("6_tefeu")]
+position = Vector2(568, 96)
+
 [node name="GameManager" type="Node" parent="." unique_id=1803754821]
 unique_name_in_owner = true
 script = ExtResource("5_tbgi4")
@@ -160,27 +183,6 @@ script = ExtResource("5_tbgi4")
 [node name="PickupItemLabel" type="Label" parent="GameManager/CanvasLayer" unique_id=1175828640]
 offset_right = 40.0
 offset_bottom = 23.0
-
-[node name="PickupItem" parent="." unique_id=1161134929 instance=ExtResource("6_tefeu")]
-position = Vector2(367, 171)
-
-[node name="PickupItem2" parent="." unique_id=107373138 instance=ExtResource("6_tefeu")]
-position = Vector2(491, 188)
-
-[node name="PickupItem3" parent="." unique_id=993434186 instance=ExtResource("6_tefeu")]
-position = Vector2(406, 101)
-
-[node name="PickupItem4" parent="." unique_id=1821156253 instance=ExtResource("6_tefeu")]
-position = Vector2(266, 155)
-
-[node name="PickupItem5" parent="." unique_id=144992352 instance=ExtResource("6_tefeu")]
-position = Vector2(285, 74)
-
-[node name="PickupItem6" parent="." unique_id=1371110923 instance=ExtResource("6_tefeu")]
-position = Vector2(607, 190)
-
-[node name="PickupItem7" parent="." unique_id=649723980 instance=ExtResource("6_tefeu")]
-position = Vector2(568, 96)
 
 [node name="HourGlass" type="Node" parent="." unique_id=2138955739]
 

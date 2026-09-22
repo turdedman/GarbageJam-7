@@ -437,22 +437,20 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("108_6fuc4")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"default",
-"speed": 1.5
+"speed": 1.78
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i4siu"]
 radius = 40.0
-height = 96.0
+height = 80.0
 
 [node name="Hourglass" type="Area2D" unique_id=1389413158]
 script = ExtResource("1_eue7v")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1754905090]
 sprite_frames = SubResource("SpriteFrames_4utro")
-frame = 16
-frame_progress = 0.98245955
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1490566746]
 shape = SubResource("CapsuleShape2D_i4siu")
@@ -460,4 +458,3 @@ shape = SubResource("CapsuleShape2D_i4siu")
 [node name="GameOverTimer" type="Timer" parent="." unique_id=724034629]
 wait_time = 60.0
 one_shot = true
-autostart = true
