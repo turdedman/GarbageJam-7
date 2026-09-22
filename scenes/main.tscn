@@ -189,7 +189,6 @@ position = Vector2(568, 96)
 [node name="Hourglass" parent="HourGlass/CanvasLayer" unique_id=1389413158 instance=ExtResource("5_o6xl0")]
 position = Vector2(48, 56)
 
-[node name="Timer" type="Timer" parent="HourGlass" unique_id=1327716696]
-wait_time = 60.0
-
 [connection signal="mouse_entered" from="HourGlass/CanvasLayer/Hourglass" to="." method="_on_hourglass_mouse_entered"]
+
+[editable path="HourGlass/CanvasLayer/Hourglass"]
