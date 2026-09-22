@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dkm8538ykgyrr" path="res://scenes/player.tscn" id="2_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://d2bs00ipgahf2" path="res://assets/mainwalls.png" id="2_jyhfs"]
 [ext_resource type="Script" uid="uid://cihj4bncor6x7" path="res://scripts/camera_2d.gd" id="3_sugp2"]
-[ext_resource type="Script" uid="uid://bgqn6fwfu3nle" path="res://scenes/game_manager.gd" id="5_tbgi4"]
+[ext_resource type="Script" uid="uid://bgqn6fwfu3nle" path="res://scripts/game_manager.gd" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://da4dgn3ex4jjf" path="res://scenes/pickup_item.tscn" id="6_tefeu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wfyh"]
