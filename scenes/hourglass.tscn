@@ -1,0 +1,456 @@
+[gd_scene format=3 uid="uid://bwwuihl2p3773"]
+
+[ext_resource type="Texture2D" uid="uid://oncxrqoulj82" path="res://assets/hourglass/hourglass1.png" id="1_xa70y"]
+[ext_resource type="Texture2D" uid="uid://bo4s8jncmk77u" path="res://assets/hourglass/hourglass2.png" id="2_eue7v"]
+[ext_resource type="Texture2D" uid="uid://dbe4dtjv0g78j" path="res://assets/hourglass/hourglass3.png" id="3_lojm1"]
+[ext_resource type="Texture2D" uid="uid://drl33e4laulcs" path="res://assets/hourglass/hourglass4.png" id="4_7ioqm"]
+[ext_resource type="Texture2D" uid="uid://oottaad01whe" path="res://assets/hourglass/hourglass5.png" id="5_u8718"]
+[ext_resource type="Texture2D" uid="uid://cuqrbdewubbi7" path="res://assets/hourglass/hourglass6.png" id="6_e3mqh"]
+[ext_resource type="Texture2D" uid="uid://cgd116xnuteh6" path="res://assets/hourglass/hourglass7.png" id="7_hh6xk"]
+[ext_resource type="Texture2D" uid="uid://bev2egw3b1jgo" path="res://assets/hourglass/hourglass8.png" id="8_oayr3"]
+[ext_resource type="Texture2D" uid="uid://cggf2y7io25od" path="res://assets/hourglass/hourglass9.png" id="9_xnjvh"]
+[ext_resource type="Texture2D" uid="uid://c6qe01d4e63qy" path="res://assets/hourglass/hourglass10.png" id="10_6jylf"]
+[ext_resource type="Texture2D" uid="uid://b24qipu06lgf1" path="res://assets/hourglass/hourglass11.png" id="11_6mwsx"]
+[ext_resource type="Texture2D" uid="uid://c8konug5yqwbp" path="res://assets/hourglass/hourglass12.png" id="12_osoum"]
+[ext_resource type="Texture2D" uid="uid://blsvhnoa7s0gx" path="res://assets/hourglass/hourglass13.png" id="13_0oy3y"]
+[ext_resource type="Texture2D" uid="uid://bs1d8dqq5ftwv" path="res://assets/hourglass/hourglass14.png" id="14_yp5gw"]
+[ext_resource type="Texture2D" uid="uid://cts6e53mej3ph" path="res://assets/hourglass/hourglass15.png" id="15_wywfr"]
+[ext_resource type="Texture2D" uid="uid://dv0l6j5guxhc8" path="res://assets/hourglass/hourglass16.png" id="16_5ciij"]
+[ext_resource type="Texture2D" uid="uid://d3ym2ydu8hurk" path="res://assets/hourglass/hourglass17.png" id="17_uig6c"]
+[ext_resource type="Texture2D" uid="uid://cxvyai16mxfr4" path="res://assets/hourglass/hourglass18.png" id="18_i5066"]
+[ext_resource type="Texture2D" uid="uid://bh1bs34pl8fcs" path="res://assets/hourglass/hourglass19.png" id="19_6tie2"]
+[ext_resource type="Texture2D" uid="uid://tp2j2uai7vvi" path="res://assets/hourglass/hourglass20.png" id="20_q7dpd"]
+[ext_resource type="Texture2D" uid="uid://bw7ll4vnv3w7x" path="res://assets/hourglass/hourglass21.png" id="21_11olv"]
+[ext_resource type="Texture2D" uid="uid://cxhil3qjxc43t" path="res://assets/hourglass/hourglass22.png" id="22_5bcxy"]
+[ext_resource type="Texture2D" uid="uid://viotfjj16jcg" path="res://assets/hourglass/hourglass23.png" id="23_v0w7h"]
+[ext_resource type="Texture2D" uid="uid://cpegeiuk1uhwm" path="res://assets/hourglass/hourglass24.png" id="24_iwaoi"]
+[ext_resource type="Texture2D" uid="uid://bo2tadav3m3da" path="res://assets/hourglass/hourglass25.png" id="25_62gno"]
+[ext_resource type="Texture2D" uid="uid://c46gwgnde8byr" path="res://assets/hourglass/hourglass26.png" id="26_a85j5"]
+[ext_resource type="Texture2D" uid="uid://ifgng5h6pqnk" path="res://assets/hourglass/hourglass27.png" id="27_8dlud"]
+[ext_resource type="Texture2D" uid="uid://c8gapygn3algr" path="res://assets/hourglass/hourglass28.png" id="28_0by4g"]
+[ext_resource type="Texture2D" uid="uid://dbqx5ff7glxm4" path="res://assets/hourglass/hourglass29.png" id="29_w4boh"]
+[ext_resource type="Texture2D" uid="uid://b3nwmjjex5lov" path="res://assets/hourglass/hourglass30.png" id="30_i8s2y"]
+[ext_resource type="Texture2D" uid="uid://ib30ygnyvrku" path="res://assets/hourglass/hourglass31.png" id="31_8mryp"]
+[ext_resource type="Texture2D" uid="uid://c3ajlpnxwhej4" path="res://assets/hourglass/hourglass32.png" id="32_y4psr"]
+[ext_resource type="Texture2D" uid="uid://itxg0r3andkl" path="res://assets/hourglass/hourglass33.png" id="33_n73gt"]
+[ext_resource type="Texture2D" uid="uid://dc274ve213j57" path="res://assets/hourglass/hourglass34.png" id="34_se84l"]
+[ext_resource type="Texture2D" uid="uid://bsabb8wjise2b" path="res://assets/hourglass/hourglass35.png" id="35_412mc"]
+[ext_resource type="Texture2D" uid="uid://bfdeocb7uf4da" path="res://assets/hourglass/hourglass36.png" id="36_flh2n"]
+[ext_resource type="Texture2D" uid="uid://6wyo7yb8fqii" path="res://assets/hourglass/hourglass37.png" id="37_db4ks"]
+[ext_resource type="Texture2D" uid="uid://cblt0fit55md8" path="res://assets/hourglass/hourglass38.png" id="38_51q2b"]
+[ext_resource type="Texture2D" uid="uid://bbax02l006nqb" path="res://assets/hourglass/hourglass39.png" id="39_6ybok"]
+[ext_resource type="Texture2D" uid="uid://bmm4ee83e0wyx" path="res://assets/hourglass/hourglass40.png" id="40_78h61"]
+[ext_resource type="Texture2D" uid="uid://c4q5j44eujjys" path="res://assets/hourglass/hourglass41.png" id="41_wk3sw"]
+[ext_resource type="Texture2D" uid="uid://dgo5enpodlb58" path="res://assets/hourglass/hourglass42.png" id="42_xcr1x"]
+[ext_resource type="Texture2D" uid="uid://42l4flgr1rck" path="res://assets/hourglass/hourglass43.png" id="43_y5t7v"]
+[ext_resource type="Texture2D" uid="uid://obygg7081epc" path="res://assets/hourglass/hourglass44.png" id="44_rshif"]
+[ext_resource type="Texture2D" uid="uid://bebt5xgo1t55u" path="res://assets/hourglass/hourglass45.png" id="45_mk2pm"]
+[ext_resource type="Texture2D" uid="uid://dtqldgkyqqyne" path="res://assets/hourglass/hourglass46.png" id="46_6siwv"]
+[ext_resource type="Texture2D" uid="uid://dxrptrfi4qga0" path="res://assets/hourglass/hourglass47.png" id="47_4l3hw"]
+[ext_resource type="Texture2D" uid="uid://dufgaawag14au" path="res://assets/hourglass/hourglass48.png" id="48_yb0a3"]
+[ext_resource type="Texture2D" uid="uid://bu56vmns6bqle" path="res://assets/hourglass/hourglass49.png" id="49_iwl5q"]
+[ext_resource type="Texture2D" uid="uid://d2bef4bx3nu5c" path="res://assets/hourglass/hourglass50.png" id="50_l2j2n"]
+[ext_resource type="Texture2D" uid="uid://b03r7dbvvmwt1" path="res://assets/hourglass/hourglass51.png" id="51_4euql"]
+[ext_resource type="Texture2D" uid="uid://byeld8n31q4qt" path="res://assets/hourglass/hourglass52.png" id="52_if2ec"]
+[ext_resource type="Texture2D" uid="uid://bowu0rtd4natt" path="res://assets/hourglass/hourglass53.png" id="53_dbspt"]
+[ext_resource type="Texture2D" uid="uid://4ig3itvx2gjx" path="res://assets/hourglass/hourglass54.png" id="54_4m5wj"]
+[ext_resource type="Texture2D" uid="uid://brit8x7gaj3fi" path="res://assets/hourglass/hourglass55.png" id="55_safu1"]
+[ext_resource type="Texture2D" uid="uid://y4k2wn6r2x3n" path="res://assets/hourglass/hourglass56.png" id="56_mdasg"]
+[ext_resource type="Texture2D" uid="uid://imc553e82mwg" path="res://assets/hourglass/hourglass57.png" id="57_6sla7"]
+[ext_resource type="Texture2D" uid="uid://b2l17o16h37k1" path="res://assets/hourglass/hourglass58.png" id="58_cti5n"]
+[ext_resource type="Texture2D" uid="uid://oq67dn3wjcts" path="res://assets/hourglass/hourglass59.png" id="59_k0ip4"]
+[ext_resource type="Texture2D" uid="uid://tqjk1vak8hhe" path="res://assets/hourglass/hourglass60.png" id="60_i8arj"]
+[ext_resource type="Texture2D" uid="uid://4j4fevbpmgbd" path="res://assets/hourglass/hourglass61.png" id="61_xe51l"]
+[ext_resource type="Texture2D" uid="uid://cy4bawkdxtoli" path="res://assets/hourglass/hourglass62.png" id="62_65prj"]
+[ext_resource type="Texture2D" uid="uid://b0xppk7b33ed6" path="res://assets/hourglass/hourglass63.png" id="63_w7uwa"]
+[ext_resource type="Texture2D" uid="uid://dko6bjvga6pc" path="res://assets/hourglass/hourglass64.png" id="64_uvt6i"]
+[ext_resource type="Texture2D" uid="uid://bqx43iekwr6x8" path="res://assets/hourglass/hourglass65.png" id="65_f8681"]
+[ext_resource type="Texture2D" uid="uid://brv61xf05w8n7" path="res://assets/hourglass/hourglass66.png" id="66_j1lrw"]
+[ext_resource type="Texture2D" uid="uid://dwuusxwtjn4ip" path="res://assets/hourglass/hourglass67.png" id="67_lrxs2"]
+[ext_resource type="Texture2D" uid="uid://blegxj5u2si7c" path="res://assets/hourglass/hourglass68.png" id="68_yrwlq"]
+[ext_resource type="Texture2D" uid="uid://be7j6kglparho" path="res://assets/hourglass/hourglass69.png" id="69_y6b66"]
+[ext_resource type="Texture2D" uid="uid://dc5pjd8tgoicy" path="res://assets/hourglass/hourglass70.png" id="70_rt3cj"]
+[ext_resource type="Texture2D" uid="uid://d3xk1w3f2cs04" path="res://assets/hourglass/hourglass71.png" id="71_8slg1"]
+[ext_resource type="Texture2D" uid="uid://md45nlprn7k3" path="res://assets/hourglass/hourglass72.png" id="72_4r8qa"]
+[ext_resource type="Texture2D" uid="uid://bhajwmlarw4n8" path="res://assets/hourglass/hourglass73.png" id="73_a7vu6"]
+[ext_resource type="Texture2D" uid="uid://wuo7plpvc8dl" path="res://assets/hourglass/hourglass74.png" id="74_7x3ki"]
+[ext_resource type="Texture2D" uid="uid://bae8bk34tdd0a" path="res://assets/hourglass/hourglass75.png" id="75_ma5fo"]
+[ext_resource type="Texture2D" uid="uid://bpagaaf8xko7k" path="res://assets/hourglass/hourglass76.png" id="76_8ofv7"]
+[ext_resource type="Texture2D" uid="uid://b044eosx6unsi" path="res://assets/hourglass/hourglass77.png" id="77_jod0s"]
+[ext_resource type="Texture2D" uid="uid://ji0htgd642fu" path="res://assets/hourglass/hourglass78.png" id="78_waktd"]
+[ext_resource type="Texture2D" uid="uid://dfhbbwyhs3bp8" path="res://assets/hourglass/hourglass79.png" id="79_p6fvq"]
+[ext_resource type="Texture2D" uid="uid://cppadrxbahh5o" path="res://assets/hourglass/hourglass80.png" id="80_efc2l"]
+[ext_resource type="Texture2D" uid="uid://chl87x1bafnl4" path="res://assets/hourglass/hourglass81.png" id="81_s60bu"]
+[ext_resource type="Texture2D" uid="uid://2cyl61xu7crk" path="res://assets/hourglass/hourglass82.png" id="82_vusk7"]
+[ext_resource type="Texture2D" uid="uid://ctrsmrfds3cul" path="res://assets/hourglass/hourglass83.png" id="83_ag6vw"]
+[ext_resource type="Texture2D" uid="uid://lpk0o6sv6ylo" path="res://assets/hourglass/hourglass84.png" id="84_ov7jj"]
+[ext_resource type="Texture2D" uid="uid://c7dky04bsl6oa" path="res://assets/hourglass/hourglass85.png" id="85_ohtyd"]
+[ext_resource type="Texture2D" uid="uid://bjk3thqfytpw4" path="res://assets/hourglass/hourglass86.png" id="86_vmkd2"]
+[ext_resource type="Texture2D" uid="uid://b6s788n7hkor4" path="res://assets/hourglass/hourglass87.png" id="87_qus83"]
+[ext_resource type="Texture2D" uid="uid://b7cebcts1swpk" path="res://assets/hourglass/hourglass89.png" id="88_y8gyn"]
+[ext_resource type="Texture2D" uid="uid://csifvf3dsm47j" path="res://assets/hourglass/hourglass90.png" id="89_tr3jb"]
+[ext_resource type="Texture2D" uid="uid://ycnerytnfuoi" path="res://assets/hourglass/hourglass91.png" id="90_o1sqt"]
+[ext_resource type="Texture2D" uid="uid://71kkej3m0na1" path="res://assets/hourglass/hourglass92.png" id="91_kqivu"]
+[ext_resource type="Texture2D" uid="uid://7gk2go4j1e8c" path="res://assets/hourglass/hourglass93.png" id="92_onxyt"]
+[ext_resource type="Texture2D" uid="uid://b14tm441rsbv7" path="res://assets/hourglass/hourglass94.png" id="93_1rmte"]
+[ext_resource type="Texture2D" uid="uid://bljhnbpj5ybic" path="res://assets/hourglass/hourglass95.png" id="94_4bdl1"]
+[ext_resource type="Texture2D" uid="uid://bnopyxlw43jpv" path="res://assets/hourglass/hourglass96.png" id="95_nduet"]
+[ext_resource type="Texture2D" uid="uid://comanfjxtlf0p" path="res://assets/hourglass/hourglass98.png" id="96_0l7qm"]
+[ext_resource type="Texture2D" uid="uid://b3o6wk1y4xo3s" path="res://assets/hourglass/hourglass99.png" id="97_dt566"]
+[ext_resource type="Texture2D" uid="uid://b1vqsgtr114h4" path="res://assets/hourglass/hourglass100.png" id="98_jfgnh"]
+[ext_resource type="Texture2D" uid="uid://dfw7idyac645t" path="res://assets/hourglass/hourglass101.png" id="99_hwnha"]
+[ext_resource type="Texture2D" uid="uid://0x31vo1xqts" path="res://assets/hourglass/hourglass102.png" id="100_qmck4"]
+[ext_resource type="Texture2D" uid="uid://cmvx4d7i78mh0" path="res://assets/hourglass/hourglass103.png" id="101_hwcev"]
+[ext_resource type="Texture2D" uid="uid://y7rqnuy2u8gs" path="res://assets/hourglass/hourglass104.png" id="102_11jdk"]
+[ext_resource type="Texture2D" uid="uid://br02iyedye6qt" path="res://assets/hourglass/hourglass105.png" id="103_mnbe5"]
+[ext_resource type="Texture2D" uid="uid://qc3vkbuet063" path="res://assets/hourglass/hourglass106.png" id="104_8fnvg"]
+[ext_resource type="Texture2D" uid="uid://qahi485cnmph" path="res://assets/hourglass/hourglass107.png" id="105_jawq0"]
+[ext_resource type="Texture2D" uid="uid://dytu6pyst0kuk" path="res://assets/hourglass/hourglass108.png" id="106_pugi4"]
+[ext_resource type="Texture2D" uid="uid://dpi47oishxjin" path="res://assets/hourglass/hourglass109.png" id="107_bjbru"]
+[ext_resource type="Texture2D" uid="uid://bc7qx6r4hsgrh" path="res://assets/hourglass/hourglass110.png" id="108_6fuc4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4utro"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xa70y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_eue7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lojm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7ioqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_u8718")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_e3mqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hh6xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_oayr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xnjvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6jylf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6mwsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_osoum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0oy3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yp5gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wywfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_5ciij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_uig6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_i5066")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6tie2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_q7dpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_11olv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5bcxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_v0w7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_iwaoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_62gno")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_a85j5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_8dlud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_0by4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_w4boh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_i8s2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8mryp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_y4psr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_n73gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_se84l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_412mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_flh2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_db4ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_51q2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_6ybok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_78h61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_wk3sw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_xcr1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_y5t7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_rshif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_mk2pm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_6siwv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_4l3hw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_yb0a3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_iwl5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_l2j2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_4euql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_if2ec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_dbspt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_4m5wj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_safu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_mdasg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_6sla7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_cti5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_k0ip4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_i8arj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_xe51l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_65prj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_w7uwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_uvt6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_f8681")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_j1lrw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_lrxs2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_yrwlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_y6b66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_rt3cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_8slg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_4r8qa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_a7vu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_7x3ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_ma5fo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_8ofv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_jod0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_waktd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_p6fvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_efc2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_s60bu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_vusk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_ag6vw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_ov7jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_ohtyd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_vmkd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_qus83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_y8gyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_tr3jb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_o1sqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_kqivu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_onxyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_1rmte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_4bdl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_nduet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_0l7qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_dt566")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_jfgnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_hwnha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_qmck4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_hwcev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_11jdk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_mnbe5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_8fnvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_jawq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_pugi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_bjbru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_6fuc4")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 1.83
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i4siu"]
+radius = 40.0
+height = 96.0
+
+[node name="Hourglass" type="Area2D" unique_id=1389413158]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1754905090]
+sprite_frames = SubResource("SpriteFrames_4utro")
+frame = 16
+frame_progress = 0.98245955
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1490566746]
+shape = SubResource("CapsuleShape2D_i4siu")
