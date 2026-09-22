@@ -160,3 +160,21 @@ offset_bottom = 23.0
 
 [node name="PickupItem" parent="." unique_id=1161134929 instance=ExtResource("6_tefeu")]
 position = Vector2(367, 171)
+
+[node name="PickupItem2" parent="." unique_id=107373138 instance=ExtResource("6_tefeu")]
+position = Vector2(491, 188)
+
+[node name="PickupItem3" parent="." unique_id=993434186 instance=ExtResource("6_tefeu")]
+position = Vector2(406, 101)
+
+[node name="PickupItem4" parent="." unique_id=1821156253 instance=ExtResource("6_tefeu")]
+position = Vector2(266, 155)
+
+[node name="PickupItem5" parent="." unique_id=144992352 instance=ExtResource("6_tefeu")]
+position = Vector2(285, 74)
+
+[node name="PickupItem6" parent="." unique_id=1371110923 instance=ExtResource("6_tefeu")]
+position = Vector2(607, 190)
+
+[node name="PickupItem7" parent="." unique_id=649723980 instance=ExtResource("6_tefeu")]
+position = Vector2(568, 96)
