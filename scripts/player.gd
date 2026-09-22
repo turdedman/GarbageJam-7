@@ -5,7 +5,7 @@ extends CharacterBody2D
 @onready var animated_sprite: AnimatedSprite2D = %AnimatedSprite2D #Skapade en @onready var för animated_sprite med ett unikt namn så att man inte råkar fucka upp något senare
 	
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 
 	var velocityVector = Vector2(0, 0)
 
