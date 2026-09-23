@@ -28,7 +28,7 @@ texture = ExtResource("1_vlc7k")
 sources/0 = SubResource("TileSetAtlasSource_y58p0")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_y58p0"]
-radius = 27.199982
+radius = 24.00003
 
 [sub_resource type="Curve" id="Curve_er1xc"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.69491524, 0.15044248), 0.0, 0.0, 0, 0]
@@ -40,7 +40,7 @@ script = ExtResource("1_eptq3")
 [node name="Clock" type="TileMapLayer" parent="." unique_id=1909455146]
 visible = false
 scale = Vector2(5, 5)
-tile_map_data = PackedByteArray("AAASAAQAAAAAAAAAAFASAAUAAAABAAAAAFASAAYAAAACAAAAAFASAAcAAAADAAAAAFARAAQAAAAAAAEAAFARAAUAAAABAAEAAFARAAYAAAACAAEAAFARAAcAAAADAAEAAFAQAAQAAAAAAAIAAFAQAAUAAAABAAIAAFAQAAYAAAACAAIAAFAQAAcAAAADAAIAAFAPAAQAAAAAAAMAAFAPAAUAAAABAAMAAFAPAAYAAAACAAMAAFAPAAcAAAADAAMAAFA=")
+tile_map_data = PackedByteArray("AAAMAAMAAAAAAAIAAFAMAAQAAAABAAIAAFAMAAUAAAACAAIAAFAMAAYAAAADAAIAAFANAAMAAAAAAAEAAFANAAQAAAABAAEAAFANAAUAAAACAAEAAFANAAYAAAADAAEAAFAOAAMAAAAAAAAAAFAOAAQAAAABAAAAAFAOAAUAAAACAAAAAFAOAAYAAAADAAAAAFALAAMAAAAAAAMAAFALAAQAAAABAAMAAFALAAUAAAACAAMAAFALAAYAAAADAAMAAFA=")
 tile_set = SubResource("TileSet_eptq3")
 
 [node name="BrokenClock" type="Area2D" parent="." unique_id=757015459]
@@ -48,13 +48,13 @@ scale = Vector2(5, 5)
 script = ExtResource("3_7dv1d")
 
 [node name="Sprite2D" type="Sprite2D" parent="BrokenClock" unique_id=1287716788]
-position = Vector2(271.99997, 95.999985)
+position = Vector2(207.99998, 80)
 rotation = 1.5707964
 scale = Vector2(0.99999994, 0.99999994)
 texture = ExtResource("2_y58p0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BrokenClock" unique_id=832008189]
-position = Vector2(271.99997, 95.99999)
+position = Vector2(208, 79.99994)
 scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("CircleShape2D_y58p0")
 

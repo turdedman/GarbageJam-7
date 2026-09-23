@@ -1,5 +1,7 @@
 extends Node
 
+var placedBoxes: Array[Node]
+
 var boxesOnBrokenClock: int = 0
 var fixedClock = false
 
@@ -18,4 +20,8 @@ func _process(delta: float) -> void:
 		$CPUParticles2D.emitting = true
 		
 		fixedClock = true
+		
+		for box in placedBoxes:
+			box.queue_free.call_deferred()
+		
 		

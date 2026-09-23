@@ -29,6 +29,9 @@ func _process(delta: float) -> void:
 				
 				get_parent().add_child(placedBox)
 				
+				get_parent().placedBoxes.append(placedBox)
+	
+				
 				placedBox.global_position = targetBody.global_position
 				
 				get_parent().boxesOnBrokenClock += 1
