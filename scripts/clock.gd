@@ -1,5 +1,7 @@
-extends Area2D
+extends Node
 
+var boxesOnBrokenClock: int = 0
+var fixedClock = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -8,16 +10,12 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
-
-func _on_body_entered(body: Node2D) -> void:
-	if body.inventoryEmpty == true:
+	if boxesOnBrokenClock >= 8 && fixedClock == false:
+		$Clock.show()
 		
-		body.get_node("Box").show()
+		$BrokenClock.hide()
 		
-		body.inventoryEmpty = false
-		body.boxInInventory = true
+		$CPUParticles2D.emitting = true
 		
-		queue_free.call_deferred()
-			
+		fixedClock = true
+		

@@ -1,10 +1,12 @@
 extends CharacterBody2D
 
-
 @export var speed: float = 180
+@export var sprintSpeed: float = 250
 @onready var animated_sprite: AnimatedSprite2D = %AnimatedSprite2D #Skapade en @onready var för animated_sprite med ett unikt namn så att man inte råkar fucka upp något senare
 
+
 var inventoryEmpty: bool = true
+var boxInInventory: bool = false
 
 var showCanOnlyHave1ItemText: bool = false
 
@@ -30,6 +32,12 @@ func _physics_process(_delta: float) -> void:
 	look_at(get_global_mouse_position())
 	rotation += PI / 2 # Ändrade 3.14 till PI så att det blir mer noggrant (Godot har inbyggd PI värde)
 	
-	velocity = velocityVector.normalized() * speed
+	if Input.is_action_pressed("sprint"):
+		velocity = velocityVector.normalized() * sprintSpeed
+	else:
+		velocity = velocityVector.normalized() * speed
 
 	move_and_slide()
+	
+	
+	

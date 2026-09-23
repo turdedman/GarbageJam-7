@@ -9,8 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://s7kjaaldgmk6" path="res://assets/Cottage_Tileset.png" id="4_choun"]
 [ext_resource type="PackedScene" uid="uid://bwwuihl2p3773" path="res://scenes/hourglass.tscn" id="5_o6xl0"]
 [ext_resource type="Script" uid="uid://bgqn6fwfu3nle" path="res://scripts/game_manager.gd" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://dij8s6llloxse" path="res://scenes/clock.tscn" id="6_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://da4dgn3ex4jjf" path="res://scenes/pickup_item.tscn" id="6_tefeu"]
-[ext_resource type="Texture2D" uid="uid://71gl5fahibmj" path="res://assets/clock.png" id="11_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://cl7xdu6ccyrt" path="res://scenes/placedBox.tscn" id="7_trceg"]
 [ext_resource type="PackedScene" uid="uid://cxihjrf4mgmvb" path="res://scenes/box.tscn" id="12_eb6dy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wfyh"]
@@ -271,28 +272,6 @@ texture = ExtResource("2_jyhfs")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tbgi4")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eb6dy"]
-texture = ExtResource("11_ya4ey")
-0:0/0 = 0
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-0:2/0 = 0
-1:2/0 = 0
-2:2/0 = 0
-3:2/0 = 0
-0:3/0 = 0
-1:3/0 = 0
-2:3/0 = 0
-3:3/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_4utro"]
-sources/0 = SubResource("TileSetAtlasSource_eb6dy")
-
 [node name="Main" type="Node2D" unique_id=1913234806]
 script = ExtResource("1_tipki")
 
@@ -309,10 +288,11 @@ scale = Vector2(4, 4)
 tile_map_data = PackedByteArray("AAAVAA4AAAAAAAEAAAAWAA4AAAABAAEAAAAXAA4AAAACAAEAAAAYAA4AAAADAAEAAAAYAAMAAAAAAAEAAGAYAAIAAAABAAEAAGAYAAEAAAACAAEAAGAYAAAAAAADAAEAAGD//wsAAAAAAAEAAFD//wwAAAABAAEAAFD//w0AAAACAAEAAFD//w4AAAADAAEAAFADAAAAAAAAAAEAADACAAAAAAAAAAEAADABAAAAAAABAAEAADAAAAAAAAACAAEAADAEAAAAAAAAAAAAAAAFAAAAAAABAAAAAAAGAAAAAAACAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAABAAAAAAAJAAAAAAAAAAAAAAAKAAAAAAABAAAAAAALAAAAAAACAAAAAAAMAAAAAAAAAAAAAAANAAAAAAABAAAAAAAOAAAAAAAAAAAAAAAPAAAAAAABAAAAAAAQAAAAAAACAAAAAAARAAAAAAAAAAAAAAASAAAAAAABAAAAAAATAAAAAAACAAAAAAAUAAAAAAAAAAAAAAAVAAAAAAAAAAAAAAAWAAAAAAABAAAAAAAXAAAAAAACAAAAAAACAA4AAAAAAAAAADABAA4AAAABAAAAADAAAA4AAAACAAAAADAFAA4AAAAAAAAAADAEAA4AAAABAAAAADADAA4AAAACAAAAADAIAA4AAAAAAAAAADAHAA4AAAABAAAAADAGAA4AAAACAAAAADALAA4AAAABAAAAADAKAA4AAAACAAAAADAJAA4AAAACAAAAADAMAA4AAAACAAAAADAOAA4AAAAAAAAAADANAA4AAAABAAAAADARAA4AAAAAAAAAADAQAA4AAAABAAAAADAPAA4AAAACAAAAADAUAA4AAAAAAAAAADATAA4AAAABAAAAADASAA4AAAACAAAAADAYAA0AAAACAAAAAFAYAAwAAAABAAAAAFAYAAsAAAAAAAAAAFAYAAoAAAACAAAAAFAYAAkAAAABAAAAAFAYAAgAAAAAAAAAAFAYAAcAAAACAAAAAFAYAAYAAAACAAAAAFAYAAUAAAABAAAAAFAYAAQAAAAAAAAAAFD//wgAAAABAAAAAGD//wkAAAAAAAAAAGD//woAAAAAAAAAAGD//wcAAAAAAAAAAGD//wUAAAACAAAAAGD//wYAAAABAAAAAGD//wIAAAAAAAAAAGD//wMAAAAAAAAAAGD//wQAAAAAAAAAAGD//wEAAAABAAAAAGD//wAAAAADAAEAADA=")
 tile_set = SubResource("TileSet_sugp2")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=914631425]
-scale = Vector2(5, 5)
-tile_map_data = PackedByteArray("AAASAAQAAAAAAAAAAFASAAUAAAABAAAAAFASAAYAAAACAAAAAFASAAcAAAADAAAAAFARAAQAAAAAAAEAAFARAAUAAAABAAEAAFARAAYAAAACAAEAAFARAAcAAAADAAEAAFAQAAQAAAAAAAIAAFAQAAUAAAABAAIAAFAQAAYAAAACAAIAAFAQAAcAAAADAAIAAFAPAAQAAAAAAAMAAFAPAAUAAAABAAMAAFAPAAYAAAACAAMAAFAPAAcAAAADAAMAAFA=")
-tile_set = SubResource("TileSet_4utro")
+[node name="Clock" parent="." unique_id=644835155 instance=ExtResource("6_eb6dy")]
+
+[node name="BrokenClock" parent="Clock" index="1" unique_id=757015459 node_paths=PackedStringArray("targetBody")]
+targetBody = NodePath("../../Player")
+placedBoxScene = ExtResource("7_trceg")
 
 [node name="Player" parent="." unique_id=1726456037 instance=ExtResource("2_0wfyh")]
 position = Vector2(312, 250)
@@ -366,9 +346,33 @@ offset_bottom = 23.0
 [node name="Hourglass" parent="HourGlass/CanvasLayer" unique_id=1389413158 instance=ExtResource("5_o6xl0")]
 position = Vector2(48, 56)
 
-[node name="Box" parent="." unique_id=1452401930 instance=ExtResource("12_eb6dy")]
-position = Vector2(440, 224)
+[node name="Boxes" type="Node" parent="." unique_id=182545841]
+
+[node name="Box" parent="Boxes" unique_id=1452401930 instance=ExtResource("12_eb6dy")]
+position = Vector2(1112, 392)
+
+[node name="Box2" parent="Boxes" unique_id=743506691 instance=ExtResource("12_eb6dy")]
+position = Vector2(1112, 392)
+
+[node name="Box3" parent="Boxes" unique_id=1402612962 instance=ExtResource("12_eb6dy")]
+position = Vector2(1112, 392)
+
+[node name="Box4" parent="Boxes" unique_id=1189306645 instance=ExtResource("12_eb6dy")]
+position = Vector2(1112, 392)
+
+[node name="Box5" parent="Boxes" unique_id=1373348702 instance=ExtResource("12_eb6dy")]
+position = Vector2(1112, 392)
+
+[node name="Box6" parent="Boxes" unique_id=1588693940 instance=ExtResource("12_eb6dy")]
+position = Vector2(1112, 392)
+
+[node name="Box7" parent="Boxes" unique_id=1980921606 instance=ExtResource("12_eb6dy")]
+position = Vector2(1112, 392)
+
+[node name="Box8" parent="Boxes" unique_id=844269777 instance=ExtResource("12_eb6dy")]
+position = Vector2(1112, 392)
 
 [connection signal="mouse_entered" from="HourGlass/CanvasLayer/Hourglass" to="." method="_on_hourglass_mouse_entered"]
 
+[editable path="Clock"]
 [editable path="HourGlass/CanvasLayer/Hourglass"]

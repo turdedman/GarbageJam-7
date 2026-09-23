@@ -1,0 +1,75 @@
+[gd_scene format=4 uid="uid://dij8s6llloxse"]
+
+[ext_resource type="Script" uid="uid://cnafr8ax8o645" path="res://scripts/clock.gd" id="1_eptq3"]
+[ext_resource type="Texture2D" uid="uid://71gl5fahibmj" path="res://assets/clock.png" id="1_vlc7k"]
+[ext_resource type="Texture2D" uid="uid://dson2uhuvu8mf" path="res://assets/brokenclock.png" id="2_y58p0"]
+[ext_resource type="Script" uid="uid://bdmt2uykhdawe" path="res://scripts/broken_clock.gd" id="3_7dv1d"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y58p0"]
+texture = ExtResource("1_vlc7k")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_eptq3"]
+sources/0 = SubResource("TileSetAtlasSource_y58p0")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_y58p0"]
+radius = 27.199982
+
+[sub_resource type="Curve" id="Curve_er1xc"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.69491524, 0.15044248), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Clock" type="Node" unique_id=644835155]
+script = ExtResource("1_eptq3")
+
+[node name="Clock" type="TileMapLayer" parent="." unique_id=1909455146]
+visible = false
+scale = Vector2(5, 5)
+tile_map_data = PackedByteArray("AAASAAQAAAAAAAAAAFASAAUAAAABAAAAAFASAAYAAAACAAAAAFASAAcAAAADAAAAAFARAAQAAAAAAAEAAFARAAUAAAABAAEAAFARAAYAAAACAAEAAFARAAcAAAADAAEAAFAQAAQAAAAAAAIAAFAQAAUAAAABAAIAAFAQAAYAAAACAAIAAFAQAAcAAAADAAIAAFAPAAQAAAAAAAMAAFAPAAUAAAABAAMAAFAPAAYAAAACAAMAAFAPAAcAAAADAAMAAFA=")
+tile_set = SubResource("TileSet_eptq3")
+
+[node name="BrokenClock" type="Area2D" parent="." unique_id=757015459]
+scale = Vector2(5, 5)
+script = ExtResource("3_7dv1d")
+
+[node name="Sprite2D" type="Sprite2D" parent="BrokenClock" unique_id=1287716788]
+position = Vector2(271.99997, 95.999985)
+rotation = 1.5707964
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("2_y58p0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BrokenClock" unique_id=832008189]
+position = Vector2(271.99997, 95.99999)
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("CircleShape2D_y58p0")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1886345427]
+position = Vector2(1360, 480)
+emitting = false
+amount = 200
+lifetime = 7.0
+one_shot = true
+explosiveness = 0.8
+randomness = 0.3
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 20.0
+initial_velocity_max = 100.0
+scale_amount_min = 20.0
+scale_amount_max = 40.0
+scale_amount_curve = SubResource("Curve_er1xc")

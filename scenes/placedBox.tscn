@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cl7xdu6ccyrt"]
+
+[ext_resource type="Script" uid="uid://c4oc0h0kyqx0b" path="res://scripts/box.gd" id="1_2mmoh"]
+[ext_resource type="Texture2D" uid="uid://cta7a50ue2fok" path="res://assets/box.png" id="2_7kgpu"]
+
+[node name="PlacedBox" type="Area2D" unique_id=1452401930]
+script = ExtResource("1_2mmoh")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=912533591]
+texture = ExtResource("2_7kgpu")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
