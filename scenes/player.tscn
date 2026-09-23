@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://67kxloo66bs" path="res://assets/playeridle.png" id="2_qlg0r"]
 [ext_resource type="Texture2D" uid="uid://cgtylu7vulyad" path="res://assets/playerwalkanim1.png" id="3_tuyoq"]
 [ext_resource type="Texture2D" uid="uid://cflxpeaqqik3r" path="res://assets/playerwalkanim2.png" id="4_fjrip"]
+[ext_resource type="Texture2D" uid="uid://cta7a50ue2fok" path="res://assets/box.png" id="5_qlg0r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_updbl"]
 animations = [{
@@ -28,12 +29,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tfwu0"]
-size = Vector2(48, 17)
+size = Vector2(48, 16.5)
 
 [node name="Player_tscn" type="CharacterBody2D" unique_id=1726456037]
 slide_on_ceiling = false
 floor_stop_on_slope = false
 script = ExtResource("1_dqkch")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1140226465]
+visible = false
+position = Vector2(24, 0)
+rotation = 1.5744745
+texture = ExtResource("5_qlg0r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1936787847]
 unique_name_in_owner = true
@@ -43,5 +50,4 @@ sprite_frames = SubResource("SpriteFrames_updbl")
 animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1603342352]
-position = Vector2(0, -1.5)
 shape = SubResource("RectangleShape2D_tfwu0")
