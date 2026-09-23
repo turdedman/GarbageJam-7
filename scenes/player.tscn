@@ -36,7 +36,7 @@ slide_on_ceiling = false
 floor_stop_on_slope = false
 script = ExtResource("1_dqkch")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1140226465]
+[node name="Box" type="Sprite2D" parent="." unique_id=1140226465]
 visible = false
 position = Vector2(24, 0)
 rotation = 1.5744745

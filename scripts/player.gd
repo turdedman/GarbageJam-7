@@ -3,7 +3,11 @@ extends CharacterBody2D
 
 @export var speed: float = 180
 @onready var animated_sprite: AnimatedSprite2D = %AnimatedSprite2D #Skapade en @onready var för animated_sprite med ett unikt namn så att man inte råkar fucka upp något senare
-	
+
+var inventoryEmpty: bool = true
+
+var showCanOnlyHave1ItemText: bool = false
+
 
 func _physics_process(_delta: float) -> void:
 

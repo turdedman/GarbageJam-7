@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://bgqn6fwfu3nle" path="res://scripts/game_manager.gd" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://da4dgn3ex4jjf" path="res://scenes/pickup_item.tscn" id="6_tefeu"]
 [ext_resource type="Texture2D" uid="uid://71gl5fahibmj" path="res://assets/clock.png" id="11_ya4ey"]
+[ext_resource type="PackedScene" uid="uid://cxihjrf4mgmvb" path="res://scenes/box.tscn" id="12_eb6dy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wfyh"]
 texture = ExtResource("1_o5qli")
@@ -364,6 +365,9 @@ offset_bottom = 23.0
 
 [node name="Hourglass" parent="HourGlass/CanvasLayer" unique_id=1389413158 instance=ExtResource("5_o6xl0")]
 position = Vector2(48, 56)
+
+[node name="Box" parent="." unique_id=1452401930 instance=ExtResource("12_eb6dy")]
+position = Vector2(440, 224)
 
 [connection signal="mouse_entered" from="HourGlass/CanvasLayer/Hourglass" to="." method="_on_hourglass_mouse_entered"]
 

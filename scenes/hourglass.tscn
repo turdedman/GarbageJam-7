@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bwwuihl2p3773"]
 
-[ext_resource type="Script" uid="uid://3tkwc15n46gy" path="res://scenes/hourglass.gd" id="1_eue7v"]
+[ext_resource type="Script" uid="uid://3tkwc15n46gy" path="res://scripts/hourglass.gd" id="1_eue7v"]
 [ext_resource type="Texture2D" uid="uid://oncxrqoulj82" path="res://assets/hourglass/hourglass1.png" id="1_xa70y"]
 [ext_resource type="Texture2D" uid="uid://bo4s8jncmk77u" path="res://assets/hourglass/hourglass2.png" id="2_eue7v"]
 [ext_resource type="Texture2D" uid="uid://dbe4dtjv0g78j" path="res://assets/hourglass/hourglass3.png" id="3_lojm1"]
