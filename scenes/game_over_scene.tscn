@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://bkmjfxoc5655"]
 
 [node name="GameOverScene" type="Node2D" unique_id=2039433658]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1883847232]
+offset_right = 1280.0
+offset_bottom = 720.0

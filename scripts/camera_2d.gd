@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 		if zoom < Vector2(3, 3):
 			zoom += Vector2(1, 1) * zoomSpeed * delta
 	elif Input.is_action_just_pressed("scroll out"):
-		if zoom > Vector2(1.5, 1.5):
+		if zoom > Vector2(1, 1):
 			zoom += Vector2(1, 1) * -zoomSpeed * delta
 	
 	var playerPosition: Vector2 = mainScene.get_node("Player").position
