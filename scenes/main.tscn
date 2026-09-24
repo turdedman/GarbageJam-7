@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://da4dgn3ex4jjf" path="res://scenes/pickup_item.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://cl7xdu6ccyrt" path="res://scenes/placedBox.tscn" id="7_trceg"]
 [ext_resource type="PackedScene" uid="uid://cxihjrf4mgmvb" path="res://scenes/box.tscn" id="12_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://dg21hg0041xmg" path="res://scenes/npc.tscn" id="14_a8y0u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wfyh"]
 texture = ExtResource("1_o5qli")
@@ -377,6 +378,15 @@ position = Vector2(1208, 368)
 
 [node name="Box8" parent="Boxes" unique_id=844269777 instance=ExtResource("12_eb6dy")]
 position = Vector2(1200, 432)
+
+[node name="Npc" parent="." unique_id=2030830361 instance=ExtResource("14_a8y0u")]
+z_index = 1
+position = Vector2(1238, 319)
+rotation = -1.5707964
+
+[node name="MiddleOfClock" type="Marker2D" parent="Npc" unique_id=395738766]
+position = Vector2(-80.99997, -198)
+rotation = 1.5707964
 
 [connection signal="mouse_entered" from="HourGlass/CanvasLayer/Hourglass" to="." method="_on_hourglass_mouse_entered"]
 

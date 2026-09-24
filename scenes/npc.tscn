@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dg21hg0041xmg"]
+
+[ext_resource type="Script" uid="uid://pdu6loe5h12i" path="res://scripts/npc.gd" id="1_7n8xq"]
+[ext_resource type="Texture2D" uid="uid://ctqk07bv74phv" path="res://assets/npc/npcidle.png" id="1_rv78h"]
+[ext_resource type="Texture2D" uid="uid://bs4rsnuyoor64" path="res://assets/npc/npcwalk1.png" id="2_7n8xq"]
+[ext_resource type="Texture2D" uid="uid://bekiy1u1k2822" path="res://assets/npc/npcwalk2.png" id="3_4wlns"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tcuxl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rv78h")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7n8xq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4wlns")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rv78h"]
+size = Vector2(107, 75)
+
+[node name="Npc" type="Area2D" unique_id=2030830361]
+script = ExtResource("1_7n8xq")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1447473266]
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_tcuxl")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1736913318]
+position = Vector2(0.5, -30.5)
+shape = SubResource("RectangleShape2D_rv78h")
