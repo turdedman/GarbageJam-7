@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://da4dgn3ex4jjf" path="res://scenes/pickup_item.tscn" id="6_tefeu"]
 [ext_resource type="PackedScene" uid="uid://cl7xdu6ccyrt" path="res://scenes/placedBox.tscn" id="7_trceg"]
 [ext_resource type="PackedScene" uid="uid://cxihjrf4mgmvb" path="res://scenes/box.tscn" id="12_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://c0ao3pvt2icth" path="res://scenes/game_win_label.tscn" id="12_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://dg21hg0041xmg" path="res://scenes/npc.tscn" id="14_a8y0u"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wfyh"]
@@ -345,6 +346,21 @@ script = ExtResource("5_tbgi4")
 [node name="PickupItemLabel" type="Label" parent="GameManager/CanvasLayer" unique_id=1175828640]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="GameWinLabel" parent="GameManager/CanvasLayer" unique_id=1340928115 instance=ExtResource("12_jkv2x")]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -237.5
+offset_top = -46.5
+offset_right = 237.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 48
 
 [node name="HourGlass" type="Node" parent="." unique_id=2138955739]
 
