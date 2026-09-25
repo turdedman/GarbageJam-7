@@ -12,18 +12,19 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if boxesOnBrokenClock >= 8 && fixedClock == false:
-		Global.destroy_requested.emit("hour_glass")
-		Global.label_visibility_changed.emit(true)
-		$Clock.show()
-		
-		$BrokenClock.hide()
-		
-		$CPUParticles2D.emitting = true
-		
-		fixedClock = true
-		
-		for box in placedBoxes:
-			box.queue_free.call_deferred()
-		
-		
+	pass
+	#if boxesOnBrokenClock >= 8 && fixedClock == false:
+	#	Global.destroy_requested.emit("hour_glass")
+	#	Global.label_visibility_changed.emit(true)
+	#	$Clock.show()
+	#	
+	#	$BrokenClock.hide()
+	#	
+	#	$CPUParticles2D.emitting = true
+	#	
+	#	fixedClock = true
+	#	
+	#	for box in placedBoxes:
+	#		box.queue_free.call_deferred()
+	#	
+	#	

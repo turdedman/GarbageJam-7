@@ -1,5 +1,7 @@
 extends Area2D
 
+@export var targetBody: Node2D
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -11,12 +13,13 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.inventoryEmpty == true:
-		
-		body.get_node("Box").show()
-		
-		body.inventoryEmpty = false
-		body.boxInInventory = true
-		
-		queue_free.call_deferred()
+	if body == targetBody:
+		if body.inventoryEmpty == true:
+			
+			body.get_node("Box").show()
+			
+			body.inventoryEmpty = false
+			body.boxInInventory = true
+			
+			queue_free.call_deferred()
 			

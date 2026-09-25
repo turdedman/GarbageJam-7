@@ -371,38 +371,69 @@ position = Vector2(48, 56)
 
 [node name="Boxes" type="Node" parent="." unique_id=182545841]
 
-[node name="Box" parent="Boxes" unique_id=1452401930 instance=ExtResource("12_eb6dy")]
+[node name="Box" parent="Boxes" unique_id=1452401930 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
 position = Vector2(1072, 192)
+targetBody = NodePath("../../Player")
 
-[node name="Box2" parent="Boxes" unique_id=743506691 instance=ExtResource("12_eb6dy")]
-position = Vector2(1168, 480)
+[node name="Box2" parent="Boxes" unique_id=224639492 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
+position = Vector2(912, 248)
+targetBody = NodePath("../../Player")
 
-[node name="Box3" parent="Boxes" unique_id=1402612962 instance=ExtResource("12_eb6dy")]
-position = Vector2(920, 184)
+[node name="Box3" parent="Boxes" unique_id=1492026786 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
+position = Vector2(992, 232)
+targetBody = NodePath("../../Player")
 
-[node name="Box4" parent="Boxes" unique_id=1189306645 instance=ExtResource("12_eb6dy")]
-position = Vector2(1016, 224)
+[node name="Box4" parent="Boxes" unique_id=631445902 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
+position = Vector2(872, 296)
+targetBody = NodePath("../../Player")
 
-[node name="Box5" parent="Boxes" unique_id=1373348702 instance=ExtResource("12_eb6dy")]
-position = Vector2(1104, 232)
+[node name="Box5" parent="Boxes" unique_id=1072788588 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
+position = Vector2(832, 360)
+targetBody = NodePath("../../Player")
 
-[node name="Box6" parent="Boxes" unique_id=1588693940 instance=ExtResource("12_eb6dy")]
-position = Vector2(1160, 280)
+[node name="Box6" parent="Boxes" unique_id=742631398 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
+position = Vector2(840, 432)
+targetBody = NodePath("../../Player")
 
-[node name="Box7" parent="Boxes" unique_id=1980921606 instance=ExtResource("12_eb6dy")]
-position = Vector2(1208, 368)
+[node name="Box7" parent="Boxes" unique_id=819515530 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
+position = Vector2(888, 448)
+targetBody = NodePath("../../Player")
 
-[node name="Box8" parent="Boxes" unique_id=844269777 instance=ExtResource("12_eb6dy")]
-position = Vector2(1200, 432)
+[node name="Box8" parent="Boxes" unique_id=1968624594 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
+position = Vector2(912, 488)
+targetBody = NodePath("../../Player")
 
-[node name="Npc" parent="." unique_id=2030830361 instance=ExtResource("14_a8y0u")]
-z_index = 1
-position = Vector2(1238, 319)
+[node name="Npc" parent="." unique_id=915538789 node_paths=PackedStringArray("playerBody", "textLabel", "currentObjectiveLabel") instance=ExtResource("14_a8y0u")]
+position = Vector2(1232, 320)
 rotation = -1.5707964
+playerBody = NodePath("../Player")
+textLabel = NodePath("../GUI/TextLabelNPC")
+currentObjectiveLabel = NodePath("../GUI/CurrentObjective")
 
-[node name="MiddleOfClock" type="Marker2D" parent="Npc" unique_id=395738766]
-position = Vector2(-80.99997, -198)
-rotation = 1.5707964
+[node name="GUI" type="CanvasLayer" parent="." unique_id=786187360]
+
+[node name="TextLabelNPC" type="Label" parent="GUI" unique_id=979231384]
+custom_maximum_size = Vector2(554.335, 130.805)
+offset_left = 24.0
+offset_top = 583.99994
+offset_right = 561.0
+offset_bottom = 684.99994
+scale = Vector2(1.1743941, 1.2942121)
+text = "NPC:
+Hi!
+Looks like you've come to fix the anti-hourglass.
+I can fix the clock if you put all the boxes on it and give me 8 kirkcoins"
+autowrap_mode = 2
+
+[node name="CurrentObjective" type="Label" parent="GUI" unique_id=1528216417]
+custom_maximum_size = Vector2(298.435, -1)
+offset_left = 24.0
+offset_top = 104.0
+offset_right = 355.0
+offset_bottom = 153.0
+text = "Current Objective:
+Listen to what the guy on the other side of the room has to say"
+autowrap_mode = 2
 
 [connection signal="mouse_entered" from="HourGlass/CanvasLayer/Hourglass" to="." method="_on_hourglass_mouse_entered"]
 

@@ -1,8 +1,20 @@
-extends Area2D
+extends RigidBody2D
 
 var canTalkWithNpc: bool = true
 
+var placedAllBoxes: bool = false
+var payedNPC: bool = false
+
+var fixingClock: bool = false
+var fixedClock: bool = false
+
+
+
+
+
 @export var playerBody: Node2D
+@export var textLabel: Label
+@export var currentObjectiveLabel: Label
 
 
 
@@ -13,4 +25,34 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+
+	if canTalkWithNpc:
+		
+		if get_parent().get_node("Clock").boxesOnBrokenClock == 8:
+			placedAllBoxes = true
+		
+		
+		if $Area2D.overlaps_body(playerBody):
+			textLabel.show()
+			if !placedAllBoxes:
+				currentObjectiveLabel.text = "Current Objective:
+				Collect and place all the boxes on the clock (drop with 'Q')"
+			elif !payedNPC:
+				currentObjectiveLabel.text = "Current Objective:
+				Collect all the coins and pay the guy so he can fix the clock (Enter to pay when close to him)"
+			elif fixingClock:
+				currentObjectiveLabel.text = "Current Objective:
+					Wait for the guy to fix the clock"
+		
+			###paying the npc###
+			
+			if get_parent().get_node("GameManager").coins == get_parent().get_node("GameManager").totalcoins:
+				if Input.is_action_pressed("enter"):
+					fixingClock = true
+					payedNPC = true
+			
+			#####################
+		
+		else:
+			textLabel.hide()
+		

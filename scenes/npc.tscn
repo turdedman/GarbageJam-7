@@ -28,16 +28,28 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rv78h"]
-size = Vector2(107, 75)
+size = Vector2(48, 15)
 
-[node name="Npc" type="Area2D" unique_id=2030830361]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7n8xq"]
+size = Vector2(88, 106)
+
+[node name="Npc" type="RigidBody2D" unique_id=915538789]
+collision_mask = 0
+gravity_scale = 0.0
 script = ExtResource("1_7n8xq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1447473266]
+z_index = 1
 scale = Vector2(2.5, 2.5)
 sprite_frames = SubResource("SpriteFrames_tcuxl")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1736913318]
-position = Vector2(0.5, -30.5)
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_rv78h")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1913206205]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=262366647]
+position = Vector2(4, -43)
+shape = SubResource("RectangleShape2D_7n8xq")

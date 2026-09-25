@@ -10,8 +10,8 @@ var coins = 0
 func add_coin():
 	coins += 1
 	pickup_item_label.text = "Coins: " + str(coins)+ "/" + str(totalcoins)
-	if coins >= totalcoins:
-		call_deferred("change_scene", "res://scenes/ending_scene.tscn")
+	#if coins >= totalcoins:
+	#	call_deferred("change_scene", "res://scenes/ending_scene.tscn")
 	
 func change_scene(scene_path: String):
 	get_tree().change_scene_to_file(scene_path)

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c0ao3pvt2icth"]
 
-[ext_resource type="Script" uid="uid://der16te63lmus" path="res://scenes/game_win_label.gd" id="1_gnb3d"]
+[ext_resource type="Script" uid="uid://der16te63lmus" path="res://scripts/game_win_label.gd" id="1_gnb3d"]
 
 [node name="GameWinLabel" type="Label" unique_id=1340928115]
 offset_right = 40.0
