@@ -43,16 +43,26 @@ func _process(delta: float) -> void:
 			elif fixingClock:
 				currentObjectiveLabel.text = "Current Objective:
 					Wait for the guy to fix the clock"
+					
+				canTalkWithNpc = false
 		
 			###paying the npc###
 			
 			if get_parent().get_node("GameManager").coins == get_parent().get_node("GameManager").totalcoins:
-				if Input.is_action_pressed("enter"):
+				if Input.is_action_pressed("enter") && fixingClock == false && fixedClock == false && payedNPC == false:
 					fixingClock = true
 					payedNPC = true
+					
 			
 			#####################
+
 		
 		else:
 			textLabel.hide()
+			
+	else: #for when the npc is fixing/have fixed the clock#
+		
+		if fixingClock == true:
+			pass
+		
 		
