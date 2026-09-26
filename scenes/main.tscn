@@ -413,6 +413,10 @@ playerBody = NodePath("../Player")
 textLabel = NodePath("../GUI/TextLabelNPC")
 currentObjectiveLabel = NodePath("../GUI/CurrentObjective")
 
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1226343708]
+position = Vector2(1040, 400)
+rotation = -1.5707964
+
 [node name="GUI" type="CanvasLayer" parent="." unique_id=786187360]
 
 [node name="TextLabelNPC" type="Label" parent="GUI" unique_id=979231384]
@@ -437,10 +441,6 @@ offset_bottom = 153.0
 text = "Current Objective:
 Listen to what the guy on the other side of the room has to say"
 autowrap_mode = 2
-
-[node name="Marker2D" type="Marker2D" parent="." unique_id=1226343708]
-position = Vector2(1040, 400)
-rotation = -1.5707964
 
 [connection signal="mouse_entered" from="HourGlass/CanvasLayer/Hourglass" to="." method="_on_hourglass_mouse_entered"]
 
