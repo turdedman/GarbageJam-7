@@ -434,14 +434,14 @@ rotation = -1.5707964
 [node name="TextLabelNPC" type="Label" parent="GUI" unique_id=979231384]
 custom_maximum_size = Vector2(573.075, 130.805)
 offset_left = 24.0
-offset_top = 583.99994
-offset_right = 581.0
-offset_bottom = 684.99994
+offset_top = 547.0
+offset_right = 597.0
+offset_bottom = 674.0
 scale = Vector2(1.1743941, 1.2942121)
 text = "Guy:
 Hey there!
-It looks like you've come to fix the anti-hourglass.
-I can fix the clock if you put all the boxes on it and give me 7 shiny coins."
+It looks like you've come to stop the anti-hourglass.
+I can fix the clock, which will then stop the anti-hourglass. You just have to put all the boxes on the clock and give me 7 shiniy coins."
 autowrap_mode = 2
 
 [node name="CurrentObjective" type="Label" parent="GUI" unique_id=1528216417]
