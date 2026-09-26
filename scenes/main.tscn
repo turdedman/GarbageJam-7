@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://d1qipcp2pwk1e"]
 
-[ext_resource type="Texture2D" uid="uid://ducv885ykroas" path="res://assets/wooden_interior.png" id="1_o5qli"]
 [ext_resource type="Script" uid="uid://duu2xmxa4aqam" path="res://scripts/main.gd" id="1_tipki"]
 [ext_resource type="PackedScene" uid="uid://dkm8538ykgyrr" path="res://scenes/player.tscn" id="2_0wfyh"]
 [ext_resource type="Texture2D" uid="uid://d2bs00ipgahf2" path="res://assets/mainwalls.png" id="2_jyhfs"]
@@ -16,8 +15,11 @@
 [ext_resource type="PackedScene" uid="uid://c0ao3pvt2icth" path="res://scenes/game_win_label.tscn" id="12_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://dg21hg0041xmg" path="res://scenes/npc.tscn" id="14_a8y0u"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a8y0u"]
+load_path = "res://.godot/imported/wooden_interior.png-40d87c52795f8c397a0a70092b2286c7.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wfyh"]
-texture = ExtResource("1_o5qli")
+texture = SubResource("CompressedTexture2D_a8y0u")
 margins = Vector2i(7, 29)
 texture_region_size = Vector2i(34, 34)
 0:0/0 = 0
@@ -363,7 +365,7 @@ offset_bottom = 46.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 48
-text = "You stopped the anti-hourglass!"
+text = "You stopped the anti-hourglass :)"
 horizontal_alignment = 1
 autowrap_mode = 2
 
