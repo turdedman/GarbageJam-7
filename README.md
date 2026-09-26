@@ -15,6 +15,8 @@ Scroll Wheel - camera zoom
 
 W A S D - movement
 
+Shift - sprint
+
 Q - Drop (works only with boxes when you are on the clock)
 
 Enter/Return - continue
