@@ -16,7 +16,6 @@
 [ext_resource type="PackedScene" uid="uid://dg21hg0041xmg" path="res://scenes/npc.tscn" id="14_a8y0u"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a8y0u"]
-load_path = "res://.godot/imported/wooden_interior.png-40d87c52795f8c397a0a70092b2286c7.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wfyh"]
 texture = SubResource("CompressedTexture2D_a8y0u")
@@ -433,11 +432,11 @@ rotation = -1.5707964
 [node name="GUI" type="CanvasLayer" parent="." unique_id=786187360]
 
 [node name="TextLabelNPC" type="Label" parent="GUI" unique_id=979231384]
-custom_maximum_size = Vector2(554.335, 130.805)
+custom_maximum_size = Vector2(573.075, 130.805)
 offset_left = 24.0
 offset_top = 583.99994
-offset_right = 578.0
-offset_bottom = 710.99994
+offset_right = 581.0
+offset_bottom = 684.99994
 scale = Vector2(1.1743941, 1.2942121)
 text = "Guy:
 Hey there!
