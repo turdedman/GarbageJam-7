@@ -59,6 +59,7 @@ scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("CircleShape2D_y58p0")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1886345427]
+z_index = 67
 position = Vector2(1360, 480)
 emitting = false
 amount = 200

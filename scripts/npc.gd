@@ -8,9 +8,11 @@ var payedNPC: bool = false
 var fixingClock: bool = false
 var fixedClock: bool = false
 
+var walkingToClock: bool = false
 
-
-
+@export var speed: float = 100
+	
+@export var targetPositionMarker: Marker2D
 
 @export var playerBody: Node2D
 @export var textLabel: Label
@@ -43,6 +45,8 @@ func _process(delta: float) -> void:
 			elif fixingClock:
 				currentObjectiveLabel.text = "Current Objective:
 					Wait for the guy to fix the clock"
+				
+				walkingToClock = true
 					
 				canTalkWithNpc = false
 		
@@ -63,6 +67,36 @@ func _process(delta: float) -> void:
 	else: #for when the npc is fixing/have fixed the clock#
 		
 		if fixingClock == true:
-			pass
-		
-		
+			
+			textLabel.text = ""
+			
+			if walkingToClock:
+				$AnimatedSprite2D.play("walk")
+				
+				$AnimatedSprite2D.look_at(targetPositionMarker.global_position)
+				$AnimatedSprite2D.rotation -= 90
+				
+
+				linear_velocity = (targetPositionMarker.global_position - self.global_position).normalized() * speed
+				
+				walkingToClock = false
+			
+			if global_position.distance_to(targetPositionMarker.global_position) < 10:
+				
+				linear_velocity = Vector2(0, 0)
+				
+				walkingToClock = false
+				$AnimatedSprite2D.play("idle")
+				
+				fixingClock = false
+				fixedClock = true
+				
+				$AudioStreamPlayer2D.play()
+				$Timer.start()
+				
+				
+				
+
+
+func _on_timer_timeout() -> void:
+	get_parent().get_node("Clock").npcFixedClock = true

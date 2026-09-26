@@ -3,7 +3,10 @@ extends Node
 var placedBoxes: Array[Node]
 
 var boxesOnBrokenClock: int = 0
-var fixedClock = false
+
+var npcFixedClock: bool = false
+var fixedClock: bool = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,19 +15,20 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-	#if boxesOnBrokenClock >= 8 && fixedClock == false:
-	#	Global.destroy_requested.emit("hour_glass")
-	#	Global.label_visibility_changed.emit(true)
-	#	$Clock.show()
-	#	
-	#	$BrokenClock.hide()
-	#	
-	#	$CPUParticles2D.emitting = true
-	#	
-	#	fixedClock = true
-	#	
-	#	for box in placedBoxes:
-	#		box.queue_free.call_deferred()
-	#	
-	#	
+	if npcFixedClock == true && fixedClock == false:
+		Global.destroy_requested.emit("hour_glass")
+		Global.label_visibility_changed.emit(true)
+		$Clock.show()
+		
+		$BrokenClock.hide()
+		
+		$CPUParticles2D.emitting = true
+		
+		fixedClock = true
+		
+		for box in placedBoxes:
+			box.queue_free.call_deferred()
+			
+		
+		
+		

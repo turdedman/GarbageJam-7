@@ -404,8 +404,9 @@ position = Vector2(912, 488)
 targetBody = NodePath("../../Player")
 
 [node name="Npc" parent="." unique_id=915538789 node_paths=PackedStringArray("targetPositionMarker", "playerBody", "textLabel", "currentObjectiveLabel") instance=ExtResource("14_a8y0u")]
-position = Vector2(1216, 312)
+position = Vector2(1232, 320)
 rotation = -1.5707964
+speed = null
 targetPositionMarker = NodePath("../Marker2D")
 playerBody = NodePath("../Player")
 textLabel = NodePath("../GUI/TextLabelNPC")
