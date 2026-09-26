@@ -51,7 +51,7 @@ color = Color(0.8509804, 0.627451, 0.4, 1)
 position = Vector2(618, 136.00002)
 scale = Vector2(2.9687493, 2.3125)
 sprite_frames = SubResource("SpriteFrames_4h3mk")
-frame_progress = 0.15043251
+frame_progress = 0.23833406
 
 [node name="TextureButton" type="TextureButton" parent="CanvasLayer" unique_id=1405408637]
 anchors_preset = 8

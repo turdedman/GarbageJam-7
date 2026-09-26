@@ -374,35 +374,35 @@ position = Vector2(48, 56)
 [node name="Boxes" type="Node" parent="." unique_id=182545841]
 
 [node name="Box" parent="Boxes" unique_id=1452401930 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
-position = Vector2(1072, 192)
+position = Vector2(1192, 96)
 targetBody = NodePath("../../Player")
 
 [node name="Box2" parent="Boxes" unique_id=224639492 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
-position = Vector2(912, 248)
+position = Vector2(1120, 104)
 targetBody = NodePath("../../Player")
 
 [node name="Box3" parent="Boxes" unique_id=1492026786 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
-position = Vector2(992, 232)
+position = Vector2(1224, 136)
 targetBody = NodePath("../../Player")
 
 [node name="Box4" parent="Boxes" unique_id=631445902 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
-position = Vector2(872, 296)
+position = Vector2(1136, 144)
 targetBody = NodePath("../../Player")
 
 [node name="Box5" parent="Boxes" unique_id=1072788588 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
-position = Vector2(832, 360)
+position = Vector2(1200, 648)
 targetBody = NodePath("../../Player")
 
 [node name="Box6" parent="Boxes" unique_id=742631398 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
-position = Vector2(840, 432)
+position = Vector2(1120, 648)
 targetBody = NodePath("../../Player")
 
 [node name="Box7" parent="Boxes" unique_id=819515530 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
-position = Vector2(888, 448)
+position = Vector2(1040, 648)
 targetBody = NodePath("../../Player")
 
 [node name="Box8" parent="Boxes" unique_id=1968624594 node_paths=PackedStringArray("targetBody") instance=ExtResource("12_eb6dy")]
-position = Vector2(912, 488)
+position = Vector2(960, 648)
 targetBody = NodePath("../../Player")
 
 [node name="Npc" parent="." unique_id=915538789 node_paths=PackedStringArray("targetPositionMarker", "playerBody", "textLabel", "currentObjectiveLabel") instance=ExtResource("14_a8y0u")]
@@ -423,13 +423,13 @@ rotation = -1.5707964
 custom_maximum_size = Vector2(554.335, 130.805)
 offset_left = 24.0
 offset_top = 583.99994
-offset_right = 561.0
+offset_right = 577.0
 offset_bottom = 684.99994
 scale = Vector2(1.1743941, 1.2942121)
 text = "Guy:
 Hi!
 Looks like you've come to fix the anti-hourglass.
-I can fix the clock if you put all the boxes on it and give me 8 kirkcoins"
+I can fix the clock if you put all the boxes on it and give me 7 shiny coins"
 autowrap_mode = 2
 
 [node name="CurrentObjective" type="Label" parent="GUI" unique_id=1528216417]

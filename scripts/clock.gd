@@ -26,6 +26,8 @@ func _process(delta: float) -> void:
 		
 		fixedClock = true
 		
+		get_parent().get_node("Npc").currentObjectiveLabel.text = ""
+		
 		for box in placedBoxes:
 			box.queue_free.call_deferred()
 			
