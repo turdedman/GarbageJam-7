@@ -19,6 +19,8 @@ Q - Drop (works only with boxes when you are on the clock)
 
 Enter/Return - continue
 
+Hovering over the hourglass makes it bigger and hovering on it again will make it small
+
 And the player faces the cursor
 
 
