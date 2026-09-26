@@ -319,25 +319,25 @@ script = ExtResource("3_sugp2")
 [node name="Coins" type="Node" parent="." unique_id=272001000]
 
 [node name="PickupItem1" parent="Coins" unique_id=1161134929 instance=ExtResource("6_tefeu")]
-position = Vector2(367, 171)
+position = Vector2(680, 320)
 
 [node name="PickupItem2" parent="Coins" unique_id=107373138 instance=ExtResource("6_tefeu")]
-position = Vector2(491, 188)
+position = Vector2(832, 176)
 
 [node name="PickupItem3" parent="Coins" unique_id=993434186 instance=ExtResource("6_tefeu")]
-position = Vector2(406, 101)
+position = Vector2(224, 120)
 
 [node name="PickupItem4" parent="Coins" unique_id=1821156253 instance=ExtResource("6_tefeu")]
-position = Vector2(266, 155)
+position = Vector2(536, 472)
 
 [node name="PickupItem5" parent="Coins" unique_id=144992352 instance=ExtResource("6_tefeu")]
-position = Vector2(285, 74)
+position = Vector2(280, 384)
 
 [node name="PickupItem6" parent="Coins" unique_id=1371110923 instance=ExtResource("6_tefeu")]
-position = Vector2(607, 190)
+position = Vector2(304, 624)
 
 [node name="PickupItem7" parent="Coins" unique_id=649723980 instance=ExtResource("6_tefeu")]
-position = Vector2(568, 96)
+position = Vector2(88, 544)
 
 [node name="GameManager" type="Node" parent="." unique_id=1803754821]
 unique_name_in_owner = true
@@ -363,6 +363,17 @@ offset_bottom = 46.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 48
+text = "You stopped the anti-hourglass!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="ReturnToMenuLabel" type="Label" parent="GameManager/CanvasLayer" unique_id=477155762]
+visible = false
+offset_left = 992.0
+offset_top = 680.0
+offset_right = 1253.0
+offset_bottom = 703.0
+text = "Press Enter to return to the menu..."
 
 [node name="HourGlass" type="Node" parent="." unique_id=2138955739]
 
