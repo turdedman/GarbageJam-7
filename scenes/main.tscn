@@ -436,13 +436,13 @@ rotation = -1.5707964
 custom_maximum_size = Vector2(554.335, 130.805)
 offset_left = 24.0
 offset_top = 583.99994
-offset_right = 577.0
-offset_bottom = 684.99994
+offset_right = 578.0
+offset_bottom = 710.99994
 scale = Vector2(1.1743941, 1.2942121)
 text = "Guy:
-Hi!
-Looks like you've come to fix the anti-hourglass.
-I can fix the clock if you put all the boxes on it and give me 7 shiny coins"
+Hey there!
+It looks like you've come to fix the anti-hourglass.
+I can fix the clock if you put all the boxes on it and give me 7 shiny coins."
 autowrap_mode = 2
 
 [node name="CurrentObjective" type="Label" parent="GUI" unique_id=1528216417]

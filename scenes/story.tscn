@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://blg31jowr5ohl"]
+
+[ext_resource type="Script" uid="uid://c5wjssb24t16f" path="res://scripts/story.gd" id="1_1octt"]
+[ext_resource type="Texture2D" uid="uid://b21abda5ote54" path="res://assets/storyhourglassbase.png" id="1_lcs0l"]
+
+[node name="Story" type="Node2D" unique_id=2040470049]
+script = ExtResource("1_1octt")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=435786644]
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.8509804, 0.627451, 0.4, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=568800765]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1897256700]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -304.0
+offset_top = -56.0
+offset_right = 304.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "Time has stopped.
+
+ And for some reason, you find yourself in the base of the Anti-Hourwatch.
+
+Legends say that it takes around a minute for the grains to fall and once that happens, the world will end.
+
+So now, it's up to you to stop it."
+horizontal_alignment = 1
+
+[node name="ReturnToMenuLabel" type="Label" parent="CanvasLayer" unique_id=1987608924]
+offset_left = 992.0
+offset_top = 680.0
+offset_right = 1266.0
+offset_bottom = 703.0
+text = "Press Enter to continue..."
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=1454865023]
+position = Vector2(1040.0001, 211.00002)
+scale = Vector2(2.92, 2.92)
+texture = ExtResource("1_lcs0l")

@@ -41,7 +41,7 @@ func _process(delta: float) -> void:
 				Collect and place all the boxes on the clock (drop with 'Q')"
 			elif !payedNPC:
 				currentObjectiveLabel.text = "Current Objective:
-				Collect all the coins and pay the guy so he can fix the clock (Enter to pay when close to him)"
+				Collect all the coins and pay the guy so he can fix the clock (Press 'Enter' to pay when close to him)"
 			elif fixingClock:
 				currentObjectiveLabel.text = "Current Objective:
 					Wait for the guy to fix the clock"
