@@ -55,6 +55,12 @@ func _process(delta: float) -> void:
 			if get_parent().get_node("GameManager").coins == get_parent().get_node("GameManager").totalcoins:
 				if Input.is_action_pressed("enter") && fixingClock == false && fixedClock == false && payedNPC == false:
 					fixingClock = true
+					
+					get_parent().get_node("GameManager").coins = 0
+					get_parent().get_node("GameManager").totalcoins = 0
+					
+					get_parent().get_node("GameManager").pickup_item_label.text = "Coins: 0/0"
+					
 					payedNPC = true
 					
 			
